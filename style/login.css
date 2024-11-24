@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+  background-color: rgba(211, 211, 211, 0.212);
+}
+
+body {
+  font-family: "Rubik";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+form {
+  padding: 20px;
+  height: 37rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 35rem;
+  text-align: center;
+  background-color: white;
+}
+
+form input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: rgb(236, 236, 236);
+  outline: none;
+  border: 0px;
+  box-shadow: none;
+  padding: 0px 40px;
+  font-size: 15px;
+  color: black;
+}
+
+form input::placeholder {
+  color: black;
+}
+
+.welcome {
+  padding: 40px 0px;
+  font-size: 40px;
+  color: skyblue;
+}
+
+p {
+  width: 100%;
+}
+
+.input-field {
+  max-width: 600px;
+  width: 500px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+.input-field i {
+  display: flex;
+  position: absolute;
+  margin: 12px;
+  color: black;
+  font-size: 20px;
+}
+
+.login-btn {
+  width: 500px;
+  height: 3rem;
+  border-radius: 10px;
+  border: 0px solid black;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  background-color: skyblue;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid skyblue;
+  color: skyblue;
+}
+
+.down-text a {
+  text-decoration: none;
+  color: red;
+}
+
+.down-text {
+  color: black;
+  margin: 10px;
+}
+
+.bottom {
+  margin-top: 20px;
+}
+
+label {
+  color: red;
+  display: flex;
+  position: absolute;
+  margin-left: 250px;
+}

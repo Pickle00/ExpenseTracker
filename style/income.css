@@ -1,0 +1,76 @@
+.income {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  /* border: 1px solid lightgrey; */
+  border-radius: 10px;
+}
+
+.top{
+  padding: 0px 20px;
+}
+
+.income .add-income {
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-income label{
+  font-size: 15px;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+
+.add-income #adjustment-amount{
+  border-radius: 10px;
+  font-size: 15px;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.press{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.add, .subtract{
+  margin: 10px 0px;
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  width: 225px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.add{
+  background-color: lightgreen;
+}
+.add:hover{
+  cursor: pointer;
+  color: lightgreen;
+  border: 1px solid lightgreen;
+  background-color: white;
+}
+
+.subtract{
+  background-color: red;
+}
+.subtract:hover{
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+  cursor: pointer;
+}

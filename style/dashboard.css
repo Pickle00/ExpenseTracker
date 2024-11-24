@@ -1,0 +1,304 @@
+.nav-bar {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+  background-color: skyblue;
+  gap: 10px;
+}
+
+.nav-bar ul input:hover {
+  background-color: rgb(255, 223, 223);
+  cursor: pointer;
+}
+
+.nav-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav-bar a {
+  width: 100%;
+  background-color: white;
+}
+
+.nav-bar ul li {
+  margin: 5px 5px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.top {
+  width: 100%;
+  padding: 20px;
+}
+
+.view-data {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  height: 60vh;
+}
+
+.expense-card {
+  padding: 30px;
+  border: 1px solid lightgrey;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-card p {
+  color: rgb(114, 114, 114);
+  font-weight: bold;
+}
+
+.expense-card i {
+  font-size: 25px;
+}
+
+.chart {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+  position: relative;
+  background-color: transparent;
+  overflow: visible;
+}
+
+canvas {
+  overflow: visible;
+}
+
+.chart p {
+  position: absolute;
+  left: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.listofCategory {
+  grid-row: 2/4;
+  border-radius: 10px;
+  position: relative;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  padding: 0px 10px;
+  height: auto;
+  align-self: start;
+}
+
+.listofCategory p {
+  height: 50px;
+  font-weight: bold;
+  width: 100%;
+  position: sticky;
+  padding: 10px;
+  background-color: white;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.categories {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.categories li {
+  margin: 5px 0;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.expense-info {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.your-expenses {
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  grid-column: 1/3;
+  border-radius: 10px;
+}
+
+.your-expenses .title {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.your-expenses .cata {
+  list-style: none;
+  padding: 0px 5px;
+  border-radius: 10px;
+}
+
+.your-expenses .cata .cata-li {
+  margin: 5px 0px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  transition: max-height 0.3s ease-out;
+}
+
+.your-expenses .cata li .category {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.your-expenses .cata .category-data {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.your-expenses .cata li:hover {
+  background-color: rgb(236, 236, 236);
+  transform: scale(1.01);
+  transition: transform 0.2s ease;
+}
+
+.nested-list {
+  display: none;
+  list-style: none;
+  margin-top: 10px;
+  width: 100%;
+  background-color: pink;
+}
+
+.nested-list li {
+  border-radius: 0px;
+  padding: 5px;
+  border: 1px solid transparent;
+  background-color: white !important;
+}
+
+.nested-list li .note {
+  padding: 10px;
+  width: 100%;
+  height: 100% !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nested-list li i {
+  padding: 10px;
+  font-size: 20px;
+  color: red;
+  border-radius: 50%;
+  background-color: white;
+}
+.nested-list li i:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.nested-list li .note div {
+  margin: 0px 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nested-list li:hover {
+  border-radius: 0px;
+  border: 1px solid grey;
+  transform: scale(1.01);
+  transition: transform 0.5s ease;
+}
+
+.add-expense {
+  border: 1px solid lightgrey;
+  padding: 20px;
+  border-radius: 10px;
+  height: auto;
+  align-self: start;
+}
+
+.add-expense label {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+
+  padding: 5px 0px;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.expense-info input[type="number"],
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(201, 234, 245, 0.281);
+  margin-bottom: 10px;
+  border: none;
+  width: 100%;
+}
+
+#expense-amount::-webkit-inner-spin-button,
+#expense-amount::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.add-expense .add {
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(65, 173, 209);
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  color: white;
+  margin-top: 10px;
+}
+
+.nav-bar li input {
+  background-color: white;
+}
